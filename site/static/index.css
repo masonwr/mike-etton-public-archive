@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500;600;700&display=swap');
+:root {
+    --background-background-color: rgb(40, 52, 63);
+}
+
+body {
+    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    min-height: 100%;
+
+    /* animation generated with https://www.gradient-animator.com/ */
+    background: linear-gradient(190deg, rgb(190, 62, 62) 0%, rgb(10, 74, 97) 90%);
+    background-size: 200% 200%;
+
+    -webkit-animation: AnimationName 50s ease infinite;
+    -moz-animation: AnimationName 50s ease infinite;
+    animation: AnimationName 50s ease infinite;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+
+html {
+    background-color: var(--background-background-color);
+}
+
+.content-wrapper {
+    min-height: 50vh;
+}
+
+footer {
+    background-color: var(--background-background-color);
+}
+
+.af {
+    font-family: 'Inconsolata', monospace;
+}
+
+iframe {
+    max-width: 100% !important;
+}
+
+.page_content a {
+    color: pink;
+    text-decoration: none;
+    transition: color 300ms;
+}
+
+.page_content p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.page_content a:hover {
+    color: hotpink;
+}
+
+.cover {
+    background-size: cover !important;
+}
+
+/* @media only screen and (min-width: 200px) { */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    header, footer .footer-wrapper, .content-wrapper h2, .content-wrapper h4, .content-wrapper p, .content-wrapper div.date {
+        padding: 0 10px;
+    }
+
+    .footer-wrapper a {
+        padding-bottom: 30px;
+    }
+}
